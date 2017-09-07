@@ -32,7 +32,12 @@
 // Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 
 function showValues( obj ) {
-  // CODE HERE
+  // CODE 
+  var str = "";
+  for (var key in obj) {
+    str += obj[key];
+  }
+  return str;
 }
 
 
@@ -43,7 +48,11 @@ function showValues( obj ) {
 
 // CODE HERE
 
-
+function greaterThan10(obj) {
+  for (var key in obj) {
+    obj[key] > 10 ? obj[key] = 0 : obj[key];
+  }return obj;
+}
 
 // ========================
 
@@ -52,7 +61,12 @@ function showValues( obj ) {
 
 // CODE HERE
 
-
+function double(obj) {
+  for (var key in obj) {
+    obj[key] *= 2;
+  }
+  return obj;
+}
 
 // ========================
 

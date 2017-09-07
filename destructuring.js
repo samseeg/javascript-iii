@@ -12,7 +12,7 @@ var carDetails = {
 }
 
 // CODE HERE
-
+var {color, make, model, year} = carDetails;
 
 // ========================
 
@@ -21,7 +21,7 @@ var carDetails = {
 
 function greeting( obj ) {
   // CODE HERE
-  
+  var {firstName, lastName, title} = obj;
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
 }
 
